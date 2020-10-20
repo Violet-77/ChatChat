@@ -1,0 +1,30 @@
+.textContainer {
+  // display: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  color: rgb(56, 56, 56);
+  height: 64%;
+  justify-content: space-between;
+
+  .activeContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50%;
+
+    .activeItem {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      margin-bottom: 1em;
+
+      img {
+        padding-right: 12px;
+      }
+    }
+  }
+
+  @media (max-width: 960px) {
+    display: none;
+  }
+}

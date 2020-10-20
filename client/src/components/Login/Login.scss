@@ -1,0 +1,71 @@
+html,
+body {
+  font-family: "Microsoft YaHei", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.loginOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  background-color: rgb(229, 229, 229);
+
+  .loginInnerContainer {
+    min-width: 300px;
+
+    .mt-40 {
+      margin-top: 40px;
+    }
+    .heading {
+      color: rgb(86, 97, 143);
+      font-size: 2.5em;
+      padding-bottom: 40px;
+      border-bottom: 2px solid rgb(86, 97, 143);
+      margin-bottom: 40px;
+    }
+    .loginInput {
+      border-radius: 6px;
+      padding: 20px 20px;
+      width: 100%;
+      border: 1px solid;
+      border-color: rgb(208, 208, 208);
+      outline: none;
+      font-size: 16px;
+    }
+
+    .button {
+      color: #fff !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 16px;
+      background: rgb(97, 205, 93);
+      padding: 16px;
+      border-radius: 5px;
+      display: inline-block;
+      border: 2px solid rgb(104, 185, 108);
+      border-radius: 6px;
+      width: 100%;
+      cursor: pointer;
+      &:focus {
+        outline: 0;
+      }
+      &:hover {
+        background-color: rgb(104, 185, 108);
+      }
+      &:active {
+        background-color: rgb(97, 205, 93);
+      }
+    }
+  }
+}
